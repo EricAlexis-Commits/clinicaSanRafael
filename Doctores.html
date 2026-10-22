@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Especialista - Clínica San Rafael</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .star-rating {
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: #dee2e6;
+            display: inline-flex;
+            gap: 4px;
+        }
+            .star-rating .bi-star-fill.active {
+                color: #ffc107;
+            }
+        .review-bubble {
+            background-color: #f8faf9;
+            border: 1px solid #e7eee9;
+            border-radius: 16px;
+            transition: transform 0.2s ease;
+        }
+            .review-bubble:hover {
+                transform: translateY(-2px);
+            }
+    </style>
+</head>
+<body class="bg-surface-muted">
+    <header class="main-header sticky-top bg-white border-bottom border-light-subtle shadow-2xs">
+        <div class="container-xxl py-2 py-lg-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="Menu.html" class="d-flex align-items-center gap-2 text-decoration-none logo-brand">
+                    <div class="brand-logo-icon">
+                        <img src="Imagenes/sanRafael_logo.png.jpg"class="w-100"h-100>
+                    </div>
+                    <span class="brand-title">Clínica San Rafael</span>
+                </a>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="index.html" class="btn btn-outline-secondary rounded-pill px-3 py-1-5 fw-semibold small">
+                        <i class="bi bi-arrow-left me-1"></i> Volver al inicio
+                    </a>
+                    <a href="index.html#cita" class="btn btn-brand-primary fw-bold text-uppercase px-3 py-2 d-none d-sm-inline-block">
+                        Agendar Cita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="py-5">
+        <div class="container-xxl">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-5">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 text-center bg-white sticky-top" style="top: 90px; z-index: 10;">
+                        <div class="position-relative d-inline-block mx-auto mb-3">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"
+                                 alt="Dr. Juan José del Alvarado"
+                                 class="rounded-4 img-fluid object-fit-cover shadow-sm"
+                                 style="width: 240px; height: 260px;">
+                            <span class="position-absolute bottom-0 end-0 bg-success border border-white border-3 rounded-circle p-2" title="Disponible hoy"></span>
+                        </div>
+                        <span class="badge badge-pill-soft-primary px-3 py-2 rounded-pill fw-bold mb-2">Cardiología Clínica</span>
+                        <h3 class="fw-bold mb-1 text-dark">Dr. Juan José del Alvarado</h3>
+                        <p class="text-muted small mb-3">Cédula Profesional: #8492041-MEX</p>
+                        <div class="d-flex justify-content-center gap-2 mb-4">
+                            <span class="pill-badge"><i class="bi bi-award me-1"></i> 2 Años Exp.</span>
+                            <span class="pill-badge"><i class="bi bi-star-fill text-warning me-1"></i> <span id="rating-badge-number">4.9</span> (<span id="total-reviews-count">3</span> opiniones)</span>
+                        </div>
+                        <hr class="my-3 opacity-25">
+                        <div class="text-start small text-muted d-flex flex-column gap-2 mb-4">
+                            <div><i class="bi bi-telephone-fill text-success-brand me-2"></i> <strong>Directo:</strong> 981 812 783</div>
+                            <div><i class="bi bi-envelope-fill text-success-brand me-2"></i> <strong>Email:</strong> dr.alvarado@sanrafael.com</div>
+                            <div><i class="bi bi-geo-alt-fill text-success-brand me-2"></i> <strong>Consultorio:</strong> Módulo B - Sala 204</div>
+                        </div>
+                        <a href="Menu.html#cita" class="btn btn-brand-primary w-100 py-2-5 fw-bold rounded-3 mt-2">
+                            Solicitar Consulta con él
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white mb-4">
+                        <h4 class="fw-bold text-dark mb-3">Acerca del Especialista</h4>
+                        <p class="text-secondary lh-lg mb-4">
+                            El Dr. Juan José del Alvarado es médico especialista en Cardiología con formación integral en prevención, monitoreo hemodinámico, detección temprana de arritmias e insuficiencia cardiaca. Dedicado a brindar diagnósticos certeros con un trato empático, transparente y centrado en la calidad de vida de cada paciente.
+                        </p>
+                        <h5 class="fw-bold text-dark mb-3">Servicios y Procedimientos</h5>
+                        <div class="row g-2 mb-4">
+                            <div class="col-sm-6">
+                                <div class="p-3 rounded-3 bg-surface-muted border border-light-subtle d-flex align-items-center gap-2">
+                                    <i class="bi bi-check-circle-fill text-success-brand"></i>
+                                    <span class="small fw-semibold">Electrocardiograma en reposo</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="p-3 rounded-3 bg-surface-muted border border-light-subtle d-flex align-items-center gap-2">
+                                    <i class="bi bi-check-circle-fill text-success-brand"></i>
+                                    <span class="small fw-semibold">Monitoreo de Hipertensión (MAPA)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-4 bg-light-section border border-success-subtle">
+                            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                                <div>
+                                    <h6 class="fw-bold text-dark mb-1"><i class="bi bi-calendar3 me-2 text-success-brand"></i>Horario de atención en clínica</h6>
+                                    <p class="text-muted small mb-0">Lunes a Viernes: 08:30 AM – 02:00 PM / 04:00 PM – 07:30 PM</p>
+                                </div>
+                                <a href="Menu.html#cita" class="btn btn-brand-primary px-4 py-2 fw-semibold rounded-3">
+                                    Agendar con este horario
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white" id="seccion-resenas">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4 pb-2 border-bottom">
+                            <div>
+                                <h4 class="fw-bold text-dark mb-1">Opiniones de Pacientes</h4>
+                                <p class="text-muted small mb-0">Experiencias y testimonios verificados</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 bg-surface-muted px-3 py-2 rounded-pill border">
+                                <i class="bi bi-star-fill text-warning fs-5"></i>
+                                <span class="fw-bold fs-5 text-dark" id="average-score">5.0</span>
+                                <span class="text-muted small">/ 5.0</span>
+                            </div>
+                        </div>
+                        <div class="bg-surface-muted p-4 rounded-4 border mb-5">
+                            <h5 class="fw-bold text-dark mb-2">Deja tu reseña</h5>
+                            <p class="text-muted small mb-3">Comparte cómo fue tu experiencia de consulta con el Dr. Juan José del Alvarado.</p>
+                            <form id="form-review">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-semibold">Tu Nombre completo</label>
+                                        <input type="text" id="review-author" class="form-control rounded-3" placeholder="Ej. Carlos Méndez" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-semibold d-block">Tu Calificación</label>
+                                        <div class="star-rating pt-1" id="star-selector">
+                                            <i class="bi bi-star-fill active" data-val="1"></i>
+                                            <i class="bi bi-star-fill active" data-val="2"></i>
+                                            <i class="bi bi-star-fill active" data-val="3"></i>
+                                            <i class="bi bi-star-fill active" data-val="4"></i>
+                                            <i class="bi bi-star-fill active" data-val="5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small fw-semibold">Tu Comentario u Opinión</label>
+                                        <textarea id="review-comment" class="form-control rounded-3" rows="3" placeholder="Describe el trato del médico, puntualidad, claridad en el diagnóstico..." required></textarea>
+                                    </div>
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="btn btn-brand-primary px-4 py-2 fw-semibold rounded-3">
+                                            <i class="bi bi-send-fill me-1"></i> Publicar reseña
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <h6 class="fw-bold text-dark mb-3">Comentarios recientes (<span id="reviews-count-header">3</span>)</h6>
+                        <div class="d-flex flex-column gap-3" id="reviews-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-4 border-top border-secondary-subtle">
+        <div class="container-xxl">
+            <small class="text-white-50">© 2026 Clínica San Rafael. Perfil Demostrativo Médico.</small>
+        </div>
+    </footer>
+    <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+            const defaultReviews = [
+              {
+                author: "María Fernanda López",
+                rating: 5,
+                date: "Hace 2 días",
+                comment: "Excelente doctor. Me explicó a detalle los resultados del electrocardiograma y tuvo un trato sumamente profesional y paciente."
+              },
+              {
+                author: "Roberto Garza",
+                rating: 5,
+                date: "Hace 1 semana",
+                comment: "Puntualidad impecable en la cita. Me ayudó a ajustar mi tratamiento para la presión y me he sentido genial desde entonces."
+              },
+              {
+                author: "Patricia Morales",
+                rating: 5,
+                date: "Hace 2 semanas",
+                comment: "Instalaciones de primera y el doctor muy atento. Despejó todas mis dudas sobre los estudios preventivos."
+              }
+            ];
+            const STORAGE_KEY = "reviews_dr_alvarado";
+            let selectedRating = 5;
+            function getReviews() {
+              const stored = localStorage.getItem(STORAGE_KEY);
+              if (stored) {
+                return JSON.parse(stored);
+              }
+              localStorage.setItem(STORAGE_KEY, JSON.stringify(defaultReviews));
+              return defaultReviews;
+            }
+            function renderReviews() {
+              const reviews = getReviews();
+              const listContainer = document.getElementById("reviews-list");
+              listContainer.innerHTML = "";
+              let sumRating = 0;
+              reviews.forEach(r => {
+                sumRating += r.rating;
+                let starsHtml = "";
+                for (let i = 1; i <= 5; i++) {
+                  if (i <= r.rating) {
+                    starsHtml += '<i class="bi bi-star-fill text-warning me-1"></i>';
+                  } else {
+                    starsHtml += '<i class="bi bi-star text-muted opacity-50 me-1"></i>';
+                  }
+                }
+                const item = document.createElement("div");
+                item.className = "review-bubble p-3 p-md-4";
+                item.innerHTML = `
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="rounded-circle bg-success-brand-light text-success-brand fw-bold d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
+                        ${r.author.charAt(0).toUpperCase()}
+                      </div>
+                      <div>
+                        <strong class="text-dark d-block leading-tight">${r.author}</strong>
+                        <small class="text-muted">${r.date}</small>
+                      </div>
+                    </div>
+                    <div>${starsHtml}</div>
+                  </div>
+                  <p class="mb-0 text-secondary small lh-base">${r.comment}</p>
+                `;
+                listContainer.appendChild(item);
+              });
+              const count = reviews.length;
+              const average = (sumRating / count).toFixed(1);
+              document.getElementById("total-reviews-count").innerText = count;
+              document.getElementById("reviews-count-header").innerText = count;
+              document.getElementById("average-score").innerText = average;
+              document.getElementById("rating-badge-number").innerText = average;
+            }
+            const starIcons = document.querySelectorAll("#star-selector i");
+            starIcons.forEach(icon => {
+              icon.addEventListener("click", () => {
+                selectedRating = parseInt(icon.getAttribute("data-val"));
+                starIcons.forEach(s => {
+                  const val = parseInt(s.getAttribute("data-val"));
+                  if (val <= selectedRating) {
+                    s.classList.add("active");
+                  } else {
+                    s.classList.remove("active");
+                  }
+                });
+              });
+            });
+            document.getElementById("form-review").addEventListener("submit", function(e) {
+              e.preventDefault();
+              const author = document.getElementById("review-author").value.trim();
+              const comment = document.getElementById("review-comment").value.trim();
+              if (!author || !comment) return;
+              const newReview = {
+                author: author,
+                rating: selectedRating,
+                date: "Hoy (recién publicado)",
+                comment: comment
+              };
+              const reviews = getReviews();
+              reviews.unshift(newReview); // Agregar al inicio de la lista
+              localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
+              document.getElementById("review-author").value = "";
+              document.getElementById("review-comment").value = "";
+              selectedRating = 5;
+              starIcons.forEach(s => s.classList.add("active"));
+              renderReviews();
+              alert("¡Gracias! Tu reseña ha sido registrada exitosamente.");
+            });
+            renderReviews();
+    </script>
+</body>
+</html>

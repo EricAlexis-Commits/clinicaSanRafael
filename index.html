@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica San Rafael</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header sticky-top bg-white border-bottom border-light-subtle shadow-2xs">
+        <div class="container-xxl py-2 py-lg-3">
+            <div class=" first-div d-flex align-items-center justify-content-between gap-2">
+                <a href="#inicio" class="d-flex align-items-center gap-1 text-decoration-none logo-brand">
+                    <div class="brand-logo-icon">
+                        <img src="Imagenes/sanRafael_logo.png.jpg" alt="Logo Clinica San Rafael" class="brand-logo-img" />
+                    </div>
+                    <span class="brand-title">Clínica San Rafael</span>
+                </a>
+                <!--<div class="search-input-pill d-none d-lg-flex align-items-center">
+                    <i class="bi bi-search text-muted me-2"></i>
+                    <input type="text" placeholder="Buscar clínica, doctor o especialidad...">
+                </div>-->
+                <nav class="nav-link d-none d-md-flex align-items-center gap-2">
+                    <a class="nav-link-item" href="#inicio">Inicio</a>
+                    <a class="nav-link-item" href="#sobre-nosotros">Sobre Nosotros</a>
+                    <a class="nav-link-item" href="#doctores">Doctores</a>
+                    <a class="nav-link-item" href="#ubicacion">Ubicación</a>
+                    <a class="nav-link-item" href="#instalaciones">Instalaciones</a>
+                    <a class="nav-link-item" href="#agendar">Agendar</a>
+                </nav>
+                
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="inicio" class="py-4 py-lg-5 bg-surface-muted">
+            <div class="container-xxl">
+                <div class="video-box-container shadow-md rounded-5 overflow-hidden position-relative">
+                    <video autoplay muted loop playsinline controls poster="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80">
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-doctors-in-a-consulting-room-41551-large.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section class="clinic-intro-section py-5 bg-white">
+            <div class="container-xxl py-3">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-7">
+                        <h1 class="display-5 fw-bold mb-3 text-dark">
+                            Tu salud, en manos de especialistas de confianza
+                        </h1>
+                        <p class="fs-5 fw-normal text-muted mb-4 lh-base" style="max-width: 600px;">
+                            Conoce nuestras instalaciones y a los doctores que forman parte de Clínicas San Rafael. Atención profesional, cercana y con cita.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#doctores" class="btn btn-brand-primary px-4 py-2-5">Ver doctores</a>
+                            <a href="#instalaciones" class="btn btn-brand-primary px-4 py-2-5">Conoce más</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="rounded-4 overflow-hidden shadow-md border border-light-subtle">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 object-fit-cover" alt="Personal médico en consulta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stats-bar py-4 bg-surface-muted">
+            <div class="container-xxl">
+                <div class="row g-3 text-center align-items-center">
+                    <div class="col-6 col-md-3 stat-border-divider">
+                        <h4 class="fw-bold mb-0 text-dark">Más de 13 años</h4>
+                        <span class="text-muted small">de experiencia</span>
+                    </div>
+                    <div class="col-6 col-md-3 stat-border-divider">
+                        <h4 class="fw-bold mb-0 text-dark">1 doctor en con</h4>
+                        <span class="text-muted small">especialidad</span>
+                    </div>
+                    <div class="col-6 col-md-3 stat-border-divider">
+                        <h4 class="fw-bold mb-0 text-dark">Lunes a viernes</h4>
+                        <span class="text-muted small">Horario de atención</span>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4 class="fw-bold mb-0 text-dark">Fácil de encontrar,</h4>
+                        <span class="text-muted small">en el centro.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="doctores" class="py-5 bg-white">
+            <div class="container-xxl py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bold text-dark mt-1">Nuestros doctores</h2>
+                    <p class="text-muted mx-auto" style="max-width: 520px;">
+                        Profesionales altamente capacitados y comprometidos con tu bienestar integral.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="doctor-modern-card h-100 p-4 rounded-4 d-flex flex-column">
+                            <div class="rounded-4 mb-3 position-relative overflow-hidden shadow-sm" style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=80"
+                                     alt="Dr. Juan José del Alvarado"
+                                     class="w-100 h-100 object-fit-cover">
+                                <span class="position-absolute bottom-0 end-0 bg-success border border-white border-2 rounded-circle m-2 p-1" title="Disponible hoy"></span>
+                            </div>
+                            <span class="specialty-badge mb-2">Cardiólogo</span>
+                            <h4 class="doctor-name mb-2">Juan José del Alvarado</h4>
+                            <p class="doctor-summary text-muted small mb-3 flex-grow-1">
+                                Especialista en prevención, chequeos integrales y diagnóstico certero con tecnología cardiovascular de punta.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="pill-badge"><i class="bi bi-clock-history me-1"></i> Experiencia: 2 años</span>
+                                <span class="pill-badge"><i class="bi bi-telephone me-1"></i> 981812783</span>
+                            </div>
+                            <a href="Doctores.html" class="btn btn-outline-doctor w-100 py-2">
+                                Conocer más acerca de él <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="doctor-modern-card h-100 p-4 rounded-4 d-flex flex-column">
+                            <div class="rounded-4 mb-3 position-relative overflow-hidden shadow-sm" style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=80"
+                                     alt="Dr. Juan José del Alvarado"
+                                     class="w-100 h-100 object-fit-cover">
+                                <span class="position-absolute bottom-0 end-0 bg-success border border-white border-2 rounded-circle m-2 p-1" title="Disponible hoy"></span>
+                            </div>
+                            <span class="specialty-badge mb-2">Cardiólogo</span>
+                            <h4 class="doctor-name mb-2">Juan José del Alvarado</h4>
+                            <p class="doctor-summary text-muted small mb-3 flex-grow-1">
+                                Especialista en prevención, chequeos integrales y diagnóstico certero con tecnología cardiovascular de punta.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="pill-badge"><i class="bi bi-clock-history me-1"></i> Experiencia: 2 años</span>
+                                <span class="pill-badge"><i class="bi bi-telephone me-1"></i> 981812783</span>
+                            </div>
+                            <a href="Doctores.html" class="btn btn-outline-doctor w-100 py-2">
+                                Conocer más acerca de él <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="doctor-modern-card h-100 p-4 rounded-4 d-flex flex-column">
+                            <div class="rounded-4 mb-3 position-relative overflow-hidden shadow-sm" style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=80"
+                                     alt="Dr. Juan José del Alvarado"
+                                     class="w-100 h-100 object-fit-cover">
+                                <span class="position-absolute bottom-0 end-0 bg-success border border-white border-2 rounded-circle m-2 p-1" title="Disponible hoy"></span>
+                            </div>
+                            <span class="specialty-badge mb-2">Cardiólogo</span>
+                            <h4 class="doctor-name mb-2">Juan José del Alvarado</h4>
+                            <p class="doctor-summary text-muted small mb-3 flex-grow-1">
+                                Especialista en prevención, chequeos integrales y diagnóstico certero con tecnología cardiovascular de punta.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="pill-badge"><i class="bi bi-clock-history me-1"></i> Experiencia: 2 años</span>
+                                <span class="pill-badge"><i class="bi bi-telephone me-1"></i> 981812783</span>
+                            </div>
+                            <a href="Doctores.html" class="btn btn-outline-doctor w-100 py-2">
+                                Conocer más acerca de él <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre-nosotros" class="py-5 bg-surface-muted">
+            <div class="container-xxl py-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="display-6 fw-bold mb-3 mt-1 text-dark">Sobre nosotros</h2>
+                        <p class="fs-5 text-secondary mb-3">
+                            Información sobre la clínica en general y sus años de servicio.
+                        </p>
+                        <p class="text-muted lh-lg mb-4">
+                            En Clínica San Rafael nos enfocamos en una atención médica cálida, profesional y accesible, respaldada por equipo especializado y consultorios de primera categoría.
+                        </p>
+                        <div class="d-flex gap-4">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-success-brand fs-5"></i>
+                                <span class="fw-semibold text-dark">Personal acreditado</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-success-brand fs-5"></i>
+                                <span class="fw-semibold text-dark">Atención con previa cita</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="rounded-4 overflow-hidden shadow-sm border border-light-subtle">
+                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="Consulta médica" class="img-fluid w-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ubicacion" class="py-5 bg-white">
+            <div class="container-xxl py-4">
+                <h2 class="display-6 fw-bold mb-4 text-dark">Ubicación</h2>
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <div class="map-card-shell rounded-4 overflow-hidden shadow-sm border">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.319917006594!2d-103.49640082482392!3d25.56102117747857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fd9ac5cd31df9%3A0x14586abf1b9bd525!2sC.%20Mariano%20Urrea%20308%2C%20Zona%20Centro%2C%2035000%20G%C3%B3mez%20Palacio%2C%20Dgo.!5e0!3m2!1sen!2smx!4v1792629435865!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                                    width="100%" height="340" style="border:0;" loading="lazy" title="Mapa">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-4">
+                        <h4 class="fw-bold mb-3 text-dark">Actualmente contamos con una ubicación accesible en el centro</h4>
+                        <p class="text-muted mb-4 lh-lg">
+                            Fácil llegada desde cualquier punto de la ciudad, con cajones de estacionamiento y farmacia cercana.
+                        </p>
+                        <div class="location-item d-flex align-items-start gap-3 mb-2">
+                            <i class="bi bi-geo-alt-fill text-success-brand fs-5"></i>
+                            <div>
+                                <strong class="text-dark">Dirección:</strong> <span class="text-muted">C.Mariano Urrea 308, Zona Centro, 3500, Gómez Palacio.</span>
+                            </div>
+                        </div>
+                        <div class="location-item d-flex align-items-start gap-3">
+                            <i class="bi bi-clock-fill text-success-brand fs-5"></i>
+                            <div>
+                                <strong class="text-dark">Horario:</strong> <span class="text-muted">Lunes a Viernes de 9:00 AM a 6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="instalaciones" class="facilities-local-section py-5 bg-surface-muted border-top border-bottom">
+            <div class="container-xxl py-3">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-6">
+                        <div class="facade-card shadow-sm rounded-4 overflow-hidden border position-relative">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80"
+                                 alt="Fachada Clínica San Rafael"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 style="height: 340px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-6 fw-bold mb-2 text-dark">Nuestras instalaciones</h2>
+                        <p class="text-muted mb-4 lh-base">
+                            Un espacio accesible y pensado para brindarte atención cercana, valoración médica y servicios de cuidado personal en un solo lugar.
+                        </p>
+                        <div class="row g-2 mb-4">
+                            <div class="col-sm-6">
+                                <div class="local-service-item p-3 rounded-3 d-flex align-items-center gap-2">
+                                    <i class="bi bi-clipboard-pulse text-success-brand fs-5"></i>
+                                    <span class="small fw-semibold text-dark">Consultorio Médico</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="local-service-item p-3 rounded-3 d-flex align-items-center gap-2">
+                                    <i class="bi bi-capsule text-success-brand fs-5"></i>
+                                    <span class="small fw-semibold text-dark">Farmacia</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="local-service-item p-3 rounded-3 d-flex align-items-center gap-2">
+                                    <i class="bi bi-box-seam text-success-brand fs-5"></i>
+                                    <span class="small fw-semibold text-dark">Depósito Médico</span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled text-muted small lh-lg mb-4">
+                            <li><i class="bi bi-check-circle-fill text-success-brand me-2"></i> Acceso directo a pie de calle</li>
+                            <li><i class="bi bi-check-circle-fill text-success-brand me-2"></i> Espacio cómodo y atención con cita para evitar esperas</li>
+                            <li><i class="bi bi-check-circle-fill text-success-brand me-2"></i> Estacionamiento exterior frente a la clínica</li>
+                        </ul>
+
+                        <a href="#cita" class="btn btn-brand-primary px-4 py-2 fw-bold">
+                            Agendar una consulta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="agendar" class="py-5 bg-white">
+            <div class="container-xxl py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <div class="card border border-light-subtle shadow-md rounded-5 p-4 p-md-5 bg-white form-card">
+                            <div class="text-center mb-4">
+                                <h2 class="fw-bold text-dark">Agenda tu consulta</h2>
+                                <p class="text-muted small">Completa los campos y confirmaremos tu fecha de atención con el doctor.</p>
+                            </div>
+                            <form action="#" method="POST">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold text-dark">Nombre y Apellido</label>
+                                        <input type="text" class="form-control form-control-modern" placeholder="Ej. Juan Pérez" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold text-dark">Teléfono</label>
+                                        <input type="tel" class="form-control form-control-modern" placeholder="Ej. 871 123 4567" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold text-dark">Especialidad</label>
+                                        <select class="form-select form-control-modern" required>
+                                            <option value="" selected disabled>Selecciona una opción</option>
+                                            <option value="cardiologia">Cardiología</option>
+                                            <option value="medicina-general">Medicina General</option>
+                                            <option value="pediatria">Pediatría</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold text-dark">Fecha sugerida</label>
+                                        <input type="date" class="form-control form-control-modern" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-semibold text-dark">Motivo de consulta</label>
+                                        <textarea class="form-control form-control-modern" rows="3" placeholder="Describe brevemente tus síntomas o consulta..."></textarea>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <button type="submit" class="btn btn-brand-primary w-100 py-3 fw-bold fs-6 rounded-3">CONFIRMAR CITA</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white text-center py-4 border-top">
+        <div class="container-xxl">
+            <div class="container">
+                <div class="mb-3">
+                    <!--Iconos de redes sociales-->
+                    <a href="https://www.facebook.com/share/1DGL3BNsKr/" target="_blank" rel="noreferrer" class="text-white fs-4 mx-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    
+
+                    <a href="https://wa.me/528718973916" target="_blank" rel="noreferrer" class="text-white fs-4 mx-2" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    
+                </div>
+                <div class="d-flex justify-content-center flex-wrap gap-3 mb-2 small">
+                    <a href="#" class="text-muted text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalTerminos">Terminos y Condiciones</a>
+                    <span class="text-muted">|</span>
+                    <a href="#" class="text-muted text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">Avisos de Privacidad</a>
+
+                </div>
+            </div>
+            <small class="text-muted">© 2026 Clínica San Rafael. Todos los derechos reservados.</small>
+
+        </div>
+    </footer>
+    <!-- Modal: Términos y Condiciones -->
+    <div class="modal fade" id="modalTerminos" tabindex="-1"
+         aria-labelledby="tituloTerminos" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="tituloTerminos">Términos y Condiciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-muted small lh-lg">
+                    <h6 class="text-dark fw-bold">1. Aceptación</h6>
+                    <p>Al usar este sitio web aceptas los presentes términos. Si no estás de acuerdo, te pedimos no utilizarlo.</p>
+
+                    <h6 class="text-dark fw-bold">2. Uso informativo</h6>
+                    <p>El contenido de este sitio es informativo y no sustituye una consulta, diagnóstico o tratamiento médico profesional.</p>
+
+                    <h6 class="text-dark fw-bold">3. Solicitud de citas</h6>
+                    <p>El formulario de cita es una solicitud. La cita queda confirmada hasta que la clínica se comunique contigo para acordar fecha y hora.</p>
+
+                    <h6 class="text-dark fw-bold">4. Emergencias</h6>
+                    <p>Este sitio no está pensado para atender urgencias. En caso de emergencia médica acude al servicio de urgencias más cercano o llama al 911.</p>
+
+                    <h6 class="text-dark fw-bold">5. Propiedad intelectual</h6>
+                    <p>Los textos, logotipos e imágenes del sitio pertenecen a Clínica San Rafael o se utilizan con la debida autorización. No pueden reproducirse sin permiso.</p>
+
+                    <h6 class="text-dark fw-bold">6. Modificaciones</h6>
+                    <p>Podemos actualizar estos términos en cualquier momento. La versión vigente será la publicada en este sitio.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-brand-primary" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Aviso de Privacidad -->
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1"
+         aria-labelledby="tituloPrivacidad" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="tituloPrivacidad">Aviso de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-muted small lh-lg">
+                    <h6 class="text-dark fw-bold">1. Responsable</h6>
+                    <p>Clínica San Rafael, con domicilio en Av. Principal #123, Zona Centro, es responsable del tratamiento de tus datos personales.</p>
+
+                    <h6 class="text-dark fw-bold">2. Datos que recabamos</h6>
+                    <p>A través del formulario de citas recabamos tu nombre, teléfono, especialidad de interés, fecha sugerida y el motivo de consulta, que puede incluir información sobre tu salud (dato personal sensible).</p>
+
+                    <h6 class="text-dark fw-bold">3. Finalidades</h6>
+                    <p>Usamos tus datos para gestionar y confirmar tu cita, contactarte y brindarte atención médica.</p>
+
+                    <h6 class="text-dark fw-bold">4. Derechos ARCO</h6>
+                    <p>Puedes solicitar el acceso, rectificación, cancelación u oposición al tratamiento de tus datos escribiendo a [correo de contacto de la clínica].</p>
+
+                    <h6 class="text-dark fw-bold">5. Cambios al aviso</h6>
+                    <p>Cualquier modificación a este aviso se publicará en este sitio web.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-brand-primary" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<script src="lib/bootstrap/js/bootstrap.bundle.js"></script>>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
