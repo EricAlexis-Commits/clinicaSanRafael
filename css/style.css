@@ -86,6 +86,7 @@ body {
     font-size: 0.95rem;
     transition: color 0.2s ease;
     flex-wrap: wrap;
+    
 }
     .nav-link-item:hover {
         text-decoration:underline;
@@ -164,6 +165,7 @@ body {
     border-top: 1px solid var(--text-border);
     border-bottom: 1px solid var(--text-border);
 }
+
 
 @media (min-width: 768px) {
     .stat-border-divider {
@@ -291,16 +293,17 @@ footer a i {
         padding-bottom: 4px;
         gap: 4px;
         padding: 4px;
-        height: auto
+        height: auto;
+        
     }
-    /* Ajuste de escala para el logo */
+     /*Ajuste de escala para el logo */
     .logo-brand .brand-logo-icon {
         width: 2rem;
         height: 2rem;
         font-size: 1.1rem;
     }
     .brand-logo-img {
-        height: 32px;
+        height: 2rem;
     }
     .nav-link a{
         font-size: 0.88rem;
